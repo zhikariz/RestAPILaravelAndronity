@@ -18,4 +18,10 @@ use Illuminate\Http\Request;
 // });
 
 Route::get('item','ApiItemController@index');
+Route::post('item','ApiItemController@store');
+Route::put('item/{id}','ApiItemController@update');
+Route::delete('item/{id}','ApiItemController@destroy');
+
+
+
 Route::get('customer','ApiCustomerController@index');
