@@ -25,3 +25,8 @@ Route::delete('item/{id}','ApiItemController@destroy');
 
 
 Route::get('customer','ApiCustomerController@index');
+Route::post('customer','ApiCustomerController@store');
+Route::put('customer/{id}','ApiCustomerController@update');
+Route::delete('customer/{id}','ApiCustomerController@destroy');
+Route::get('customer/login/{username}/{password}','ApiCustomerController@searchByGet');
+Route::post('customer/login','ApiCustomerController@searchByPost');
